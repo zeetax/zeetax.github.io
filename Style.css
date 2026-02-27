@@ -1,0 +1,25 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#fff;color:#111;scroll-behavior:smooth;}
+
+header{background:#071c3b;color:#fff;display:flex;justify-content:space-between;align-items:center;padding:15px 60px;position:sticky;top:0;z-index:1000;}
+.logo-area{display:flex;align-items:center;gap:10px;}
+.logo-area img{height:50px;}
+nav a{color:white;margin-left:20px;text-decoration:none;font-size:14px;font-weight:500;}
+
+.hero{background:linear-gradient(rgba(7,28,59,0.9),rgba(7,28,59,0.9)),url('https://images.unsplash.com/photo-1554224155-6726b3ff858f');background-size:cover;background-position:center;color:white;text-align:center;padding:120px 20px;}
+.hero h1{font-size:40px;margin-bottom:15px;}
+.hero p{margin-bottom:20px;font-size:18px;}
+.btn{background:white;color:#071c3b;padding:12px 30px;border-radius:6px;text-decoration:none;font-weight:600;}
+
+section{padding:80px 20px;text-align:center;}
+.section-dark{background:#f4f7fb;}
+.grid{display:flex;justify-content:center;gap:25px;flex-wrap:wrap;margin-top:40px;}
+.card{background:white;width:270px;padding:20px;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.08);transition:0.3s;}
+.card:hover{transform:translateY(-8px);}
+.card img{width:100%;height:160px;object-fit:cover;border-radius:8px;margin-bottom:15px;}
+.team img{width:160px;height:160px;border-radius:50%;object-fit:cover;margin-bottom:15px;border:4px solid #071c3b;}
+.counter{font-size:36px;font-weight:700;color:#071c3b;margin-bottom:8px;}
+footer{background:#071c3b;color:white;padding:25px;text-align:center;}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:14px 20px;border-radius:50px;font-size:14px;text-decoration:none;font-weight:600;box-shadow:0 5px 15px rgba(0,0,0,0.3);}
+@media(max-width:768px){header{flex-direction:column;}nav{margin-top:10px;}}
+
