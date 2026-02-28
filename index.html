@@ -15,7 +15,7 @@
     </nav>
 
     <div class="menu-icon" id="menuIcon">
-      ☰
+      
     </div>
   </div>
  </header>
@@ -325,11 +325,16 @@ NTN & Income Tax Consultants
 <section id="contact">
 <div class="container">
 <h2>Contact Us</h2>
-<form>
-<input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Your Email" required>
-<textarea rows="4" placeholder="Your Message" required></textarea>
+<form action="https://formspree.io/f/yourID" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Your Email" required>
+
+<textarea name="message" placeholder="Your Message" required></textarea>
+
 <button type="submit">Send Message</button>
+
 </form>
 </div>
 </section>
