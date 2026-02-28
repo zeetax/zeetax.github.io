@@ -3,150 +3,129 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ZeetaxSolutions | Professional Tax & Corporate Services</title>
-<meta name="description" content="ZeetaxSolutions provides NTN, Tax Filing, Company Registration & Corporate Services across Pakistan.">
-<style>
-/* Reset & basic */
-* {margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif;}
-body {line-height:1.6; scroll-behavior: smooth;}
-a {text-decoration:none; color:#fff;}
-section {padding:80px 20px; text-align:center;}
+<title>ZeetaxSolutions | NTN, Tax Filing & Company Registration in Pakistan</title>
+<meta name="description" content="ZeetaxSolutions provides NTN Registration, Income Tax Filing, Company Registration, SECP Compliance & Corporate Legal Services across Pakistan.">
 
-/* Navbar */
-nav {position:fixed; top:0; width:100%; display:flex; justify-content:space-between; align-items:center; padding:20px; background:#007BFF; z-index:1000;}
-nav .logo {font-size:24px; font-weight:bold;}
-nav ul {list-style:none; display:flex;}
-nav ul li {margin-left:20px;}
-nav ul li a {color:#fff; font-weight:500; transition:0.3s;}
-nav ul li a:hover {color:#FFD700;}
-
-/* Hero */
-.hero {height:90vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; background:#f0f8ff; padding-top:80px;}
-.hero h1 {font-size:48px; margin-bottom:20px;}
-.hero p {font-size:20px; margin-bottom:30px;}
-.hero .btn {padding:15px 30px; background:#007BFF; border-radius:5px; transition:0.3s;}
-.hero .btn:hover {background:#0056b3;}
-
-/* Cards common */
-.cards, .testimonial-cards, .team-cards, .why-us ul, .blog-cards {display:flex; flex-wrap:wrap; justify-content:center; gap:20px;}
-.card, .testimonial, .member, .why-us li, .blog-article {background:#007BFF; color:#fff; padding:20px; border-radius:10px; width:250px; transition:0.3s;}
-.card:hover, .testimonial:hover, .member:hover, .why-us li:hover, .blog-article:hover {transform:translateY(-5px);}
-
-/* Member image */
-.member img {width:100%; border-radius:10px; margin-bottom:15px;}
-
-/* Contact */
-.contact a {color:#FFD700;}
-.whatsapp-btn {display:inline-block; margin-top:20px; padding:15px 30px; background:#25D366; border-radius:5px; transition:0.3s;}
-.whatsapp-btn:hover {background:#128C7E;}
-
-/* Blog */
-.blog-article {width:300px; background:#e6f2ff; color:#333;}
-
-/* Responsive */
-@media(max-width:768px){
-nav ul {flex-direction:column; margin-top:10px;}
-.cards, .testimonial-cards, .team-cards, .why-us ul, .blog-cards {flex-direction:column; align-items:center;}
-.card, .testimonial, .member, .why-us li, .blog-article {width:90%;}
-}
-</style>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-<!-- Navbar -->
-<nav>
-<div class="logo">ZeetaxSolutions</div>
+<header>
+<div class="container nav">
+<h2>ZeetaxSolutions</h2>
 <ul>
 <li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
 <li><a href="#services">Services</a></li>
-<li><a href="#why">Why Choose Us</a></li>
-<li><a href="#testimonials">Testimonials</a></li>
-<li><a href="#team">Our Team</a></li>
+<li><a href="#why">Why Us</a></li>
+<li><a href="#achievements">Achievements</a></li>
+<li><a href="#team">Team</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#faq">FAQ</a></li>
 <li><a href="#contact">Contact</a></li>
-<li><a href="#blog">Blog</a></li>
 </ul>
-</nav>
+</div>
+</header>
 
-<!-- Hero -->
 <section id="home" class="hero">
-<h1>Professional Tax & Corporate Services</h1>
-<p>NTN, Tax Filing, Company Registration & More. Fast, Reliable & Affordable!</p>
-<a href="#contact" class="btn">Get Started</a>
+<h1>Professional Tax & Corporate Experts</h1>
+<p>Complete Business Registration & Compliance Solutions in Pakistan</p>
+<a href="#contact" class="btn">Free Consultation</a>
 </section>
 
-<!-- Services -->
+<section id="about">
+<div class="container">
+<h2>About ZeetaxSolutions</h2>
+<p>We provide reliable taxation and corporate services including NTN, Company Registration, SECP compliance and bookkeeping.</p>
+</div>
+</section>
+
 <section id="services">
+<div class="container">
 <h2>Our Services</h2>
-<div class="cards">
-<div class="card"><h3>NTN Registration</h3><p>Get your National Tax Number quickly and easily.</p></div>
-<div class="card"><h3>Income Tax Filing</h3><p>FBR-compliant filing for individuals & companies.</p></div>
-<div class="card"><h3>Sales Tax Registration</h3><p>Register for GST/Sales Tax purposes effortlessly.</p></div>
-<div class="card"><h3>Company Registration</h3><p>Private Limited, Partnership, or Sole Proprietorship setup.</p></div>
-<div class="card"><h3>Trademark & Licensing</h3><p>Import/Export licenses and trademark registration.</p></div>
-<div class="card"><h3>Bookkeeping & Payroll</h3><p>Accounting, bookkeeping & salary management services.</p></div>
-<div class="card"><h3>Annual Returns & Audit</h3><p>SECP & FBR compliance reporting for your business.</p></div>
-<div class="card"><h3>Legal Notices & Compliance</h3><p>Handling legal notices and corporate compliance documents.</p></div>
+<div class="grid">
+
+<div class="card"><i class="fas fa-id-card"></i><h3>NTN Registration</h3></div>
+<div class="card"><i class="fas fa-file-invoice"></i><h3>Income Tax Filing</h3></div>
+<div class="card"><i class="fas fa-percentage"></i><h3>Sales Tax Registration</h3></div>
+<div class="card"><i class="fas fa-building"></i><h3>Company Registration</h3></div>
+<div class="card"><i class="fas fa-trademark"></i><h3>Trademark Registration</h3></div>
+<div class="card"><i class="fas fa-scale-balanced"></i><h3>SECP Compliance</h3></div>
+<div class="card"><i class="fas fa-briefcase"></i><h3>Import Export License</h3></div>
+<div class="card"><i class="fas fa-book"></i><h3>Bookkeeping & Payroll</h3></div>
+
+</div>
 </div>
 </section>
 
-<!-- Why Choose Us -->
-<section id="why" class="why-us">
-<h2>Why Choose Us</h2>
-<ul>
-<li>Experienced Professionals</li>
-<li>Fast & Reliable Service</li>
-<li>Affordable Pricing</li>
-<li>100% Compliance with FBR & SECP</li>
-<li>Trusted by Hundreds of Clients</li>
+<section id="why">
+<div class="container">
+<h2>Why Choose Us?</h2>
+<ul class="why-list">
+<li>✔ 5+ Years Experience</li>
+<li>✔ 2000+ Clients Served</li>
+<li>✔ Fast Processing</li>
+<li>✔ Affordable Fees</li>
+<li>✔ 100% Confidential</li>
 </ul>
-</section>
-
-<!-- Testimonials -->
-<section id="testimonials">
-<h2>What Our Clients Say</h2>
-<div class="testimonial-cards">
-<div class="testimonial"><p>"Excellent service! Fast and professional."</p><span>- Ali Khan</span></div>
-<div class="testimonial"><p>"Helped me register my company quickly."</p><span>- Sara Ahmed</span></div>
-<div class="testimonial"><p>"Highly recommended for corporate compliance."</p><span>- Ahmed Raza</span></div>
 </div>
 </section>
 
-<!-- Team -->
+<section id="achievements">
+<div class="container">
+<h2>Our Achievements</h2>
+<div class="grid">
+<div class="stat"><h3>2000+</h3><p>NTN Registered</p></div>
+<div class="stat"><h3>1500+</h3><p>Tax Returns Filed</p></div>
+<div class="stat"><h3>300+</h3><p>Companies Registered</p></div>
+<div class="stat"><h3>98%</h3><p>Client Satisfaction</p></div>
+</div>
+</div>
+</section>
+
 <section id="team">
+<div class="container">
 <h2>Our Team</h2>
-<div class="team-cards">
-<div class="member"><img src="team1.jpg" alt="John Doe"><h3>John Doe</h3><p>Tax Consultant</p></div>
-<div class="member"><img src="team2.jpg" alt="Jane Smith"><h3>Jane Smith</h3><p>Corporate Advisor</p></div>
-<div class="member"><img src="team3.jpg" alt="Ali Khan"><h3>Ali Khan</h3><p>Financial Analyst</p></div>
+<div class="grid">
+<div class="card"><img src="https://via.placeholder.com/150"><h3>CEO & Founder</h3></div>
+<div class="card"><img src="https://via.placeholder.com/150"><h3>Senior Tax Consultant</h3></div>
+<div class="card"><img src="https://via.placeholder.com/150"><h3>Corporate Advisor</h3></div>
+</div>
 </div>
 </section>
 
-<!-- Contact -->
-<section id="contact" class="contact">
+<section id="reviews">
+<div class="container">
+<h2>Client Reviews</h2>
+<div class="grid">
+<div class="card"><p>"Highly professional tax services."</p></div>
+<div class="card"><p>"Fast company registration process."</p></div>
+<div class="card"><p>"Best tax consultant in Pakistan."</p></div>
+</div>
+</div>
+</section>
+
+<section id="faq">
+<div class="container">
+<h2>Frequently Asked Questions</h2>
+<div class="faq-item"><h4>How long does NTN registration take?</h4><p>Usually 1–2 working days.</p></div>
+<div class="faq-item"><h4>Do you provide SECP compliance?</h4><p>Yes, complete annual return filing.</p></div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
 <h2>Contact Us</h2>
-<p>Phone: <a href="tel:+923265831528">0326 5831528</a></p>
-<p>Email: <a href="mailto:zeetaxsolutions183@gmail.com">zeetaxsolutions183@gmail.com</a></p>
-<a href="https://wa.me/923265831528" class="whatsapp-btn" target="_blank">WhatsApp Us</a>
-</section>
-
-<!-- Blog -->
-<section id="blog">
-<h2>Tax Tips & Updates</h2>
-<div class="blog-cards">
-<div class="blog-article"><h3>How to File Your Income Tax in Pakistan</h3><p>Step-by-step guide for individuals and businesses.</p></div>
-<div class="blog-article"><h3>Understanding Company Registration</h3><p>Learn about Private Limited, Partnership & Sole Proprietorship.</p></div>
+<p>Email: zeetaxsolutions183@gmail.com</p>
+<p>Phone: 03265831528</p>
 </div>
 </section>
 
-<script>
-// Smooth scroll for navbar
-document.querySelectorAll('nav ul li a').forEach(anchor => {
-anchor.addEventListener('click', function(e){
-e.preventDefault();
-document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'});
-});
-});
-</script>
+<a href="https://wa.me/923265831528" class="whatsapp" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
 
+<script src="script.js"></script>
 </body>
-</html>
+  </html>
