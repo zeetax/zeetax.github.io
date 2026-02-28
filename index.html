@@ -3,120 +3,183 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ZeetaxSolutions | NTN, Tax Filing & Company Registration in Pakistan</title>
-<meta name="description" content="ZeetaxSolutions provides NTN Registration, Income Tax Filing, Company Registration, SECP Compliance & Corporate Legal Services across Pakistan.">
+<title>ZeetaxSolutions | Professional Tax & Corporate Experts</title>
 
-<!-- Font Awesome Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
-/* ===== CSS START ===== */
-* {margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif;}
-body {background:#fff; color:#222; line-height:1.6;}
-header {background:#0b1d59; padding:15px 0; position:sticky; top:0; z-index:1000;}
-header .container {display:flex; justify-content:space-between; align-items:center; max-width:1200px; margin:auto; padding:0 20px;}
-header h2 {color:#fff; font-size:24px;}
-header ul {list-style:none; display:flex; gap:20px;}
-header ul li a {color:#fff; text-decoration:none; font-weight:500; transition:0.3s;}
-header ul li a:hover {color:#00aaff;}
-.hero {background:#0b1d59; color:#fff; text-align:center; padding:120px 20px;}
-.hero h1 {font-size:48px; margin-bottom:20px;}
-.hero p {font-size:20px; margin-bottom:30px;}
-.hero .btn {padding:12px 30px; background:#00aaff; color:#fff; text-decoration:none; border-radius:5px; font-weight:600; transition:0.3s;}
-.hero .btn:hover {background:#0088cc;}
-section {padding:80px 20px;}
-section h2 {text-align:center; font-size:36px; margin-bottom:40px; color:#0b1d59;}
-.grid {display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
-.card {background:#f9f9f9; padding:30px 20px; text-align:center; border-radius:10px; transition:0.3s;}
-.card:hover {box-shadow:0 10px 25px rgba(0,0,0,0.15);}
-.card i {font-size:40px; color:#0b1d59; margin-bottom:15px;}
-.card h3 {font-size:22px; margin-top:10px;}
-.why-list {list-style:none; display:flex; flex-wrap:wrap; justify-content:center; gap:20px;}
-.why-list li {background:#0b1d59; color:#fff; padding:15px 25px; border-radius:5px; font-weight:500;}
-.stat {background:#0b1d59; color:#fff; padding:30px 20px; border-radius:10px; text-align:center;}
-.stat h3 {font-size:32px; margin-bottom:10px;}
-#team img {border-radius:50%; margin-bottom:15px; width:150px; height:150px; object-fit:cover;}
-#reviews .card {font-style:italic; color:#555;}
-.faq-item {margin-bottom:20px;}
-.faq-item h4 {cursor:pointer; background:#f1f1f1; padding:15px; border-radius:5px;}
-.faq-item p {display:none; padding:15px;}
-#contact p {text-align:center; margin-bottom:10px;}
-.whatsapp {position:fixed; bottom:20px; right:20px; background:#25d366; color:#fff; padding:15px; border-radius:50%; font-size:24px; z-index:1000; transition:0.3s;}
-.whatsapp:hover {background:#1ebe57;}
-@media(max-width:768px){header ul{flex-direction:column; background:#0b1d59; position:absolute; top:60px; right:-100%; width:200px; transition:0.3s;} header ul.show{right:0;}}
-/* ===== CSS END ===== */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#fff;color:#222;overflow-x:hidden;}
+.container{max-width:1200px;margin:auto;padding:0 20px;}
+
+header{
+background:#0b1d59;
+padding:15px 0;
+position:fixed;
+width:100%;
+z-index:1000;
+}
+
+.nav{display:flex;justify-content:space-between;align-items:center;}
+.logo{color:#fff;font-size:24px;font-weight:700;}
+
+nav ul{list-style:none;display:flex;gap:25px;}
+nav ul li a{color:#fff;text-decoration:none;font-weight:500;transition:.3s;}
+nav ul li a:hover{color:#00aaff;}
+
+.menu-toggle{display:none;font-size:22px;color:#fff;cursor:pointer;}
+
+.hero{
+height:100vh;
+background:linear-gradient(rgba(11,29,89,0.85),rgba(11,29,89,0.85)),
+url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85') center/cover no-repeat;
+display:flex;justify-content:center;align-items:center;text-align:center;color:#fff;padding:20px;
+}
+
+/* SCROLLING HEADING */
+.scrolling-text{
+height:70px;
+overflow:hidden;
+position:relative;
+}
+
+.scrolling-text div{
+font-size:50px;
+font-weight:700;
+animation:scrollText 9s infinite;
+}
+
+@keyframes scrollText{
+0%{transform:translateY(0);}
+33%{transform:translateY(-70px);}
+66%{transform:translateY(-140px);}
+100%{transform:translateY(0);}
+}
+
+.hero p{font-size:20px;margin:30px 0;}
+
+.btn{
+padding:14px 35px;
+background:#ffffff;
+color:#0b1d59;
+border-radius:30px;
+text-decoration:none;
+font-weight:700;
+transition:.3s;
+}
+.btn:hover{background:#00aaff;color:#fff;}
+
+section{padding:100px 20px;}
+section h2{text-align:center;font-size:36px;margin-bottom:50px;color:#0b1d59;}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
+
+.card{
+background:#fff;padding:35px 20px;border-radius:15px;text-align:center;
+transition:.4s;box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+.card:hover{transform:translateY(-10px);box-shadow:0 15px 40px rgba(0,0,0,0.15);}
+.card i{font-size:40px;color:#0b1d59;margin-bottom:15px;}
+
+#team img{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:15px;
+border:4px solid #0b1d59;
+}
+
+.achievement{background:#0b1d59;color:#fff;text-align:center;}
+.achievement h2{color:#fff;}
+.counter{font-size:40px;font-weight:bold;margin-bottom:10px;}
+
+.review{background:#f8f9ff;}
+
+#contact form{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+#contact input,
+#contact textarea{
+padding:15px;
+border-radius:10px;
+border:1px solid #ccc;
+font-size:16px;
+}
+
+#contact input:focus,
+#contact textarea:focus{
+outline:none;
+border-color:#0b1d59;
+box-shadow:0 0 5px rgba(11,29,89,0.2);
+}
+
+#contact button{
+padding:15px;
+border:none;
+background:#0b1d59;
+color:#fff;
+font-size:16px;
+border-radius:30px;
+cursor:pointer;
+transition:.3s;
+}
+
+#contact button:hover{background:#00aaff;}
+
+footer{background:#0b1d59;color:#fff;padding:60px 20px;}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;}
+.footer-bottom{text-align:center;margin-top:40px;border-top:1px solid rgba(255,255,255,0.2);padding-top:20px;}
+
+.whatsapp{
+position:fixed;bottom:20px;right:20px;background:#25d366;color:#fff;
+padding:15px;border-radius:50%;font-size:22px;
+}
+
+@media(max-width:768px){
+nav ul{position:absolute;top:60px;right:-100%;background:#0b1d59;
+flex-direction:column;width:200px;padding:20px;transition:.3s;}
+nav ul.active{right:0;}
+.menu-toggle{display:block;}
+.scrolling-text div{font-size:30px;}
+}
 </style>
 </head>
+
 <body>
 
 <header>
 <div class="container nav">
-<h2>ZeetaxSolutions</h2>
+<div class="logo">ZeetaxSolutions</div>
+<nav>
 <ul>
 <li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
 <li><a href="#services">Services</a></li>
 <li><a href="#why">Why Us</a></li>
-<li><a href="#achievements">Achievements</a></li>
 <li><a href="#team">Team</a></li>
 <li><a href="#reviews">Reviews</a></li>
-<li><a href="#faq">FAQ</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
+</nav>
 </div>
 </header>
 
-<section id="home" class="hero">
-<h1>Professional Tax & Corporate Experts</h1>
-<p>Complete Business Registration & Compliance Solutions in Pakistan</p>
+<section class="hero" id="home">
+<div>
+<div class="scrolling-text">
+<div>
+Professional Tax Experts<br>
+Company Registration Specialists<br>
+NTN & Income Tax Consultants
+</div>
+</div>
+<p>NTN • Tax Filing • Company Registration • SECP Compliance</p>
 <a href="#contact" class="btn">Free Consultation</a>
-</section>
-
-<section id="about">
-<div class="container">
-<h2>About ZeetaxSolutions</h2>
-<p>We provide reliable taxation and corporate services including NTN, Company Registration, SECP compliance and bookkeeping.</p>
-</div>
-</section>
-
-<section id="services">
-<div class="container">
-<h2>Our Services</h2>
-<div class="grid">
-<div class="card"><i class="fas fa-id-card"></i><h3>NTN Registration</h3></div>
-<div class="card"><i class="fas fa-file-invoice"></i><h3>Income Tax Filing</h3></div>
-<div class="card"><i class="fas fa-percentage"></i><h3>Sales Tax Registration</h3></div>
-<div class="card"><i class="fas fa-building"></i><h3>Company Registration</h3></div>
-<div class="card"><i class="fas fa-trademark"></i><h3>Trademark Registration</h3></div>
-<div class="card"><i class="fas fa-scale-balanced"></i><h3>SECP Compliance</h3></div>
-<div class="card"><i class="fas fa-briefcase"></i><h3>Import Export License</h3></div>
-<div class="card"><i class="fas fa-book"></i><h3>Bookkeeping & Payroll</h3></div>
-</div>
-</div>
-</section>
-
-<section id="why">
-<div class="container">
-<h2>Why Choose Us?</h2>
-<ul class="why-list">
-<li>✔ 5+ Years Experience</li>
-<li>✔ 2000+ Clients Served</li>
-<li>✔ Fast Processing</li>
-<li>✔ Affordable Fees</li>
-<li>✔ 100% Confidential</li>
-</ul>
-</div>
-</section>
-
-<section id="achievements">
-<div class="container">
-<h2>Our Achievements</h2>
-<div class="grid">
-<div class="stat"><h3>2000+</h3><p>NTN Registered</p></div>
-<div class="stat"><h3>1500+</h3><p>Tax Returns Filed</p></div>
-<div class="stat"><h3>300+</h3><p>Companies Registered</p></div>
-<div class="stat"><h3>98%</h3><p>Client Satisfaction</p></div>
-</div>
 </div>
 </section>
 
@@ -124,64 +187,28 @@ section h2 {text-align:center; font-size:36px; margin-bottom:40px; color:#0b1d59
 <div class="container">
 <h2>Our Team</h2>
 <div class="grid">
-<div class="card"><img src="https://via.placeholder.com/150"><h3>CEO & Founder</h3></div>
-<div class="card"><img src="https://via.placeholder.com/150"><h3>Senior Tax Consultant</h3></div>
-<div class="card"><img src="https://via.placeholder.com/150"><h3>Corporate Advisor</h3></div>
+
+<div class="card">
+<img src="team.png" alt="Advocate Sahiba">
+<h3>Advocate Sahiba</h3>
+<p>CEO & Founder</p>
+</div>
+
+<div class="card">
+<img src="team.png" alt="Ali Raza">
+<h3>Ali Raza</h3>
+<p>Senior Consultant</p>
+</div>
+
+<div class="card">
+<img src="team.png" alt="Fatima Noor">
+<h3>Fatima Noor</h3>
+<p>Corporate Advisor</p>
+</div>
+
 </div>
 </div>
 </section>
 
-<section id="reviews">
-<div class="container">
-<h2>Client Reviews</h2>
-<div class="grid">
-<div class="card"><p>"Highly professional tax services."</p></div>
-<div class="card"><p>"Fast company registration process."</p></div>
-<div class="card"><p>"Best tax consultant in Pakistan."</p></div>
-</div>
-</div>
-</section>
-
-<section id="faq">
-<div class="container">
-<h2>Frequently Asked Questions</h2>
-<div class="faq-item"><h4>How long does NTN registration take?</h4><p>Usually 1–2 working days.</p></div>
-<div class="faq-item"><h4>Do you provide SECP compliance?</h4><p>Yes, complete annual return filing.</p></div>
-</div>
-</section>
-
-<section id="contact">
-<div class="container">
-<h2>Contact Us</h2>
-<p>Email: zeetaxsolutions183@gmail.com</p>
-<p>Phone: 03265831528</p>
-</div>
-</section>
-
-<a href="https://wa.me/923265831528" class="whatsapp" target="_blank">
-<i class="fab fa-whatsapp"></i>
-</a>
-
-<script>
-/* ===== JS START ===== */
-// FAQ Toggle
-const faqItems = document.querySelectorAll('.faq-item');
-faqItems.forEach(item => {
-    item.addEventListener('click', () => {
-        const p = item.querySelector('p');
-        p.style.display = p.style.display === 'block' ? 'none' : 'block';
-    });
-});
-
-// Smooth Scroll
-document.querySelectorAll('header ul li a').forEach(link => {
-    link.addEventListener('click', e => {
-        e.preventDefault();
-        const target = document.querySelector(link.getAttribute('href'));
-        target.scrollIntoView({ behavior: 'smooth' });
-    });
-});
-/* ===== JS END ===== */
-</script>
 </body>
-                    </html>
+</html> 
